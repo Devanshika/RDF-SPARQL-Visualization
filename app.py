@@ -5,6 +5,7 @@ from rdflib import Graph as RDFGraph
 from rdflib import Literal,URIRef
 import itertools
 import pandas as pd
+import copy
 import dash
 import visdcc
 import dash_daq as daq
@@ -14,17 +15,13 @@ from base64 import b64decode
 from dash.dependencies import Input, Output, State
 
 #set default sparql query
-sparql_query_def = """PREFIX dbo: <http://dbpedia.org/ontology/>
-CONSTRUCT {
-    ?hero dbo:height ?height
-} WHERE {
-    ?hero dbo:height ?height
-}"""
+sparql_query_def = """"""
 
 #set local file path or remote endpoint
 #rdf_file_path = 'C:\\Users\\devan\\Downloads\\superhero-ttl\\superhero.ttl'
 #rdf_file_format = 'turtle'
 rdf_graph = None
+default_graph = None
 #remote_endpoint = None
 rdf_file="No file chosen"
 
@@ -33,41 +30,48 @@ current_data = {'nodes':[],'edges':[]}
 
 #functionality
 def get_nodes_by_search(search_type,search_string):
-    search_obj = None
-    if search_type == 'Literal':
-        search_obj = Literal(search_string)
-    elif search_type == 'URIRef':
-        search_obj = URIRef(search_string)
-    if search_obj is None:
-        return current_data
-    
-    node_df, edge_df = get_node_dict(search_obj,None,None,'red',10,'diamond')
-    node_df_cpy, edge_df_cpy = get_node_dict(None,None,search_obj,'red',10,'diamond')
-    node_df = pd.concat([node_df,node_df_cpy],ignore_index = True).drop_duplicates(subset=['id'],ignore_index=True)
-    edge_df = pd.concat([edge_df_cpy,edge_df],ignore_index = True).drop_duplicates(subset=['from','to'],ignore_index=True)
-    node_df_cpy, edge_df_cpy = get_node_dict(None,None,None)
-    node_df = pd.concat([node_df,node_df_cpy],ignore_index = True).drop_duplicates(subset=['id'],ignore_index=True)
-    edge_df = pd.concat([edge_df_cpy,edge_df],ignore_index = True).drop_duplicates(subset=['from','to'],ignore_index=True)
-
+    search_string = search_string.lower()
+    node_df = pd.DataFrame(current_data['nodes'])
+    node_df['color'] ='blue'
+    node_df['shape'] = 'dot'
+    node_df['size'] = 15
+    if search_type == 'Predicate':
+        for edge_val in current_data['edges']:
+            if search_string in edge_val['title'].lower():
+                node_df.loc[(node_df.title == edge_val['from']) | (node_df.title == edge_val['to']),'color'] = 'red'
+                node_df.loc[(node_df.title == edge_val['from']) | (node_df.title == edge_val['to']),'shape'] = 'diamond'
+                node_df.loc[(node_df.title == edge_val['from']) | (node_df.title == edge_val['to']),'size'] = 40
+    elif search_type == 'SubjectObject':
+        for node_val in current_data['nodes']:
+            if search_string in node_val['title'].lower():
+                node_df.loc[node_df.title == node_val['title'],'color'] = 'red'
+                node_df.loc[node_df.title == node_val['title'],'shape'] = 'diamond'
+                node_df.loc[node_df.title == node_val['title'],'size'] = 40
     current_data['nodes'] = node_df.to_dict(orient='records')
-    current_data['edges'] = edge_df.to_dict(orient='records')
-
     return current_data
 
-def get_node_dict(subject,object,predicate,color = 'blue',size = 7,shape = 'dot'):
-    node_df = pd.DataFrame( columns=['id','label','color','size','shape'])
-    edge_df = pd.DataFrame(columns=['from','to','label','id'])
+def set_current_data():
+    node_df = pd.DataFrame(columns=['id','title','color','shape','size'])
+    edge_df = pd.DataFrame(columns=['from','to','title','id'])
     c=itertools.count()
-    for triple in rdf_graph.triples((subject,predicate,object)):
-        if triple[0] not in node_df.id.tolist():
-            new_node = {"id":triple[0],"label":triple[0],"color":color,"size":size,"shape":shape}
+    for triple in rdf_graph.triples((None,None,None)):
+        subjVal = str(triple[0].toPython())
+        predVal = str(triple[1].toPython())
+        objVal = str(triple[2].toPython())
+        if subjVal not in node_df.id.tolist():
+            new_node = {"id":subjVal,'title':subjVal,"color":'blue',"shape":'dot','size':15}
             node_df = node_df.append(new_node,ignore_index =True)
-        if triple[2] not in node_df.id.tolist():
-            new_node = {"id":triple[2], "label":triple[2],"color":color,"size":size,"shape":shape}
+        if objVal not in node_df.id.tolist():
+            new_node = {"id":objVal, 'title':objVal,"color":'blue',"shape":'dot','size':15}
             node_df = node_df.append(new_node,ignore_index = True)
-        new_edge = {"from":triple[0],"to":triple[2],"label":triple[1],"id":triple[1] + "#"+str(next(c))}
+        new_edge = {
+            "from":subjVal,
+            "to":objVal,
+            'title':predVal,
+            "id":predVal + "#"+str(next(c))}
         edge_df = edge_df.append(new_edge,ignore_index=True)
-    return node_df,edge_df
+    current_data['nodes'] = node_df.to_dict(orient='records')
+    current_data['edges'] = edge_df.to_dict(orient='records')
 
 def get_nodes_and_edges(query_value = None,search_type = None,search_string = None):
     global rdf_graph
@@ -84,16 +88,23 @@ def get_nodes_and_edges(query_value = None,search_type = None,search_string = No
     #     sparql_endpoint.setReturnFormat(TURTLE)
     #     rdf_graph = RDFGraph()
     #     rdf_graph.parse(data=sparql_endpoint.query().convert(), format="turtle")
-    node_df,edge_df = get_node_dict(None,None,None)
-    current_data['nodes'] = node_df.to_dict(orient='records')
-    current_data['edges'] = edge_df.to_dict(orient='records')
+    set_current_data()
+    return current_data
+
+def reset_graph():
+    global default_graph
+    global rdf_graph
+    rdf_graph = copy.deepcopy(default_graph)
+    current_data = {'nodes':[],'edges':[]}
     return current_data
 
 
 
 #creating app
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = dash.Dash("RDF SPARQL Visualization", external_stylesheets=external_stylesheets)
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css',
+                        'https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css']
+external_scripts = ['https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js']
+app = dash.Dash("RDF SPARQL Visualization", external_stylesheets=external_stylesheets, external_scripts=external_scripts)
 
 colors = {
     'background': '#111111',
@@ -122,7 +133,8 @@ file_format_dropdown= dcc.Dropdown(id='file-format',
 #upload-data
 load_button_label= html.Label("Upload Data")
 load_button= dcc.Upload(html.Button('Upload File'),id='upload-data', multiple=False)
-
+#clear-graph
+clear_graph_button = html.Button('Clear Graph',id='clear-graph', n_clicks=0)
 
 #sparql-query
 sparql_query_label = html.Label('SPARQL Query')
@@ -130,17 +142,17 @@ sparql_query_textarea = dcc.Textarea(id='sparql-query', value=sparql_query_def, 
 
 
 #generate-sparql-graph
-generate_graph_button = html.Button('Run SPARQL',id='generate-sparql-graph', n_clicks=0)
+generate_graph_button = html.Button('Generate Graph',id='generate-sparql-graph', n_clicks=0)
 
 #search-type
 search_label=html.Label("Search Type")
 search_dropdown= dcc.Dropdown(id='search-type',
         options=[
-            {'label': 'URIRef', 'value': 'URIRef'},
-            {'label': 'Literal', 'value': 'Literal'},
+            {'label': 'Search By Predicate', 'value': 'Predicate'},
+            {'label': 'Search By Subject/Object', 'value': 'SubjectObject'},
             
         ],
-        value='Literal'
+        value='SubjectObject'
     )
 #search-query search-graph
 search_query_input = dcc.Input(id='search-query',placeholder='Enter search string',type='text')
@@ -152,21 +164,32 @@ search_graph_button = html.Button('Search',id='search-graph')
 #node_size_slider = dcc.Slider(id='node-size',min=1,max=10,step=0.5,value=7)
 
 #toggle-node-label
-toggle_node_text = daq.ToggleSwitch(id='toggle-node-label', label='Show Node Text',labelPosition='left', value=True)  
+#toggle_node_text = daq.ToggleSwitch(id='toggle-node-label', label='Show Node Text',labelPosition='left', value=True)  
 
 #toggle-edge-label
-toggle_edge_text = daq.ToggleSwitch(id='toggle-edge-label', label='Show Edge Text',labelPosition='left', value=True)
+#toggle_edge_text = daq.ToggleSwitch(id='toggle-edge-label', label='Show Edge Text',labelPosition='left', value=True)
 
 #graph
 visualization_label = html.H3(children = 'Knowledge Graph', style = {'textAlign':'center','color': colors['text']})
 visualization = visdcc.Network(
     id ='graph' ,
     options = dict(
+        clickToUse = True,
         height='600px', 
         width='100%',
         edges= dict(
-            width = 2
-        )))
+            width = 2,
+            smooth = dict(
+                enabled = True,
+                type='continuous',
+                roundness = 0.6
+            )
+        ),
+        # interactions= dict(
+        #     hover=True,
+        #     keyboard = True
+        # )
+        ))
 
 #App Layout
 app.layout = html.Div(
@@ -184,13 +207,14 @@ app.layout = html.Div(
                         html.Div(children = [ load_button_label, load_button ]),
                         html.Br(),
                         html.Div(children = [ sparql_query_label, sparql_query_textarea]),
-                        generate_graph_button,
+                        html.Br(),
+                        html.Div(children = [clear_graph_button, generate_graph_button]),
                         html.Br(),
                         html.Div(children = [search_label, search_dropdown,search_query_input, search_graph_button]),
                         # html.Br(),
                         # html.Div(children = [node_size_label, node_size_slider]),
-                        html.Br(),
-                        html.Div(children=[toggle_node_text,toggle_edge_text]),
+                        # html.Br(),
+                        # html.Div(children=[toggle_node_text,toggle_edge_text]),
                         html.Br()
                     ],
                     className='three columns'),
@@ -206,65 +230,69 @@ app.layout = html.Div(
 
 
 #dynamic callbacks
-    
-
 @app.callback(
-    [Output('graph','data'),
-    Output('rdf-file', 'children')],
-    [Input('search-graph','n_clicks'),
-    Input('generate-sparql-graph','n_clicks'),
+    Output('rdf-file','children'),
     Input('upload-data','contents'),
-    State('sparql-query','value'),
-    State('file-format','value'),
-    State('search-type','value'),
-    State('search-query','value'),
     State('upload-data', 'filename'),
-    State('upload-data', 'last_modified')]
+    State('upload-data', 'last_modified'),
+    State('file-format','value')
 )
-def generate_graph(
-    search_graph, 
-    generate_sparql_graph,
-    contents, 
-    sparql_query,  
-    file_format,
-    search_type,
-    search_query, 
-    filename, 
-    last_modified):
+def load_rdf_file(contents,filename,last_modified,file_format):
     global rdf_file
     global rdf_graph
-    ctx = dash.callback_context
-    if not ctx.triggered:
-        return current_data,rdf_file
-    if ctx.triggered[0]['prop_id'] == 'generate-sparql-graph.n_clicks':
-        return get_nodes_and_edges(query_value = sparql_query),rdf_file
-    elif ctx.triggered[0]['prop_id'] == 'search-graph.n_clicks':
-        return get_nodes_and_edges(search_type = search_type,search_string = search_query),rdf_file
-    elif contents is not None:
+    global default_graph
+    if contents is not None:
         content_type, content_string= contents.split(',')
         decoded=b64decode(content_string)
         rdf_graph = RDFGraph()
         rdf_graph.parse(StringIO(decoded.decode('utf-8')),format=file_format)
+        default_graph = copy.deepcopy(rdf_graph)
         rdf_file= "Current File: "+filename
-        return get_nodes_and_edges(),rdf_file
-
-
+    return rdf_file
+    
 
 @app.callback(
-    Output('graph','options'),
-    Input('toggle-node-label','value'),
-    Input('toggle-edge-label','value')
+    Output('graph','data'),
+    [Input('search-graph','n_clicks'),
+    Input('generate-sparql-graph','n_clicks'),
+    Input('clear-graph','n_clicks'),
+    State('sparql-query','value'),
+    State('search-type','value'),
+    State('search-query','value')]
 )
-def customize_graph(node_bool,edge_bool):
-    return {'nodes':
-                    {
-                        'font':{'size': 0 if not node_bool else 14}
-                    },
-            'edges':
-                    {
-                        'font':{'size':0 if not edge_bool else 14}
-                    }
-            }
+def generate_graph(
+    search_graph, 
+    generate_sparql_graph,
+    clear_graph,
+    sparql_query, 
+    search_type,
+    search_query):
+    ctx = dash.callback_context
+    if not ctx.triggered:
+        return current_data
+    if ctx.triggered[0]['prop_id'] == 'generate-sparql-graph.n_clicks':
+        return get_nodes_and_edges(query_value = sparql_query)
+    elif ctx.triggered[0]['prop_id'] == 'search-graph.n_clicks':
+        return get_nodes_and_edges(search_type = search_type,search_string = search_query)
+    elif ctx.triggered[0]['prop_id'] == 'clear-graph.n_clicks':
+        return reset_graph()
+
+
+# @app.callback(
+#     Output('graph','options'),
+#     Input('toggle-node-label','value'),
+#     Input('toggle-edge-label','value')
+# )
+# def customize_graph(node_bool,edge_bool):
+#     return {'nodes':
+#                     {
+#                         'font':{'size': 0 if not node_bool else 14}
+#                     },
+#             'edges':
+#                     {
+#                         'font':{'size':0 if not edge_bool else 14}
+#                     }
+#             }
 
 
 if __name__ == '__main__':
