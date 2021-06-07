@@ -185,6 +185,18 @@ visualization = visdcc.Network(
                 roundness = 0.6
             )
         ),
+        physics = dict(
+            solver='forceAtlas2Based',
+            forceAtlas2Based = dict(
+                avoidOverlap = 0.6,
+                springConstant = 0.01,
+                springLength = 300,
+                gravitationalConstant = -150
+            ),
+            minVelocity = 0,
+            stabilization = True,
+            maxVelocity = 50
+        )
         # interactions= dict(
         #     hover=True,
         #     keyboard = True
