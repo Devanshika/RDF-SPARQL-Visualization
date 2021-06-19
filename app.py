@@ -7,6 +7,7 @@ import pandas as pd
 import copy
 import dash
 import dash_daq as daq
+import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
 from base64 import b64decode
@@ -26,48 +27,77 @@ def get_nodes_by_search(search_type,search_string):
     node_df = pd.DataFrame(current_data['nodes'])
     edge_df = pd.DataFrame(current_data['edges'])
     node_df['color'] ='#003f5c'
-    node_df['shape'] = 'dot'
     node_df['size'] = 15
+    node_df['font'] = None
+    edge_df['font'] = None
     if search_type == 'Predicate':
         for edge_val in current_data['edges']:
             if search_string in edge_val['title'].lower():
-                node_df.loc[(node_df.title == edge_val['from']) | (node_df.title == edge_val['to']),'color'] = '#bc5090'
-                node_df.loc[(node_df.title == edge_val['from']) | (node_df.title == edge_val['to']),'shape'] = 'diamond'
-                node_df.loc[(node_df.title == edge_val['from']) | (node_df.title == edge_val['to']),'size'] = 50
+                edge_val_to_ix = node_df.title == edge_val['to']
+                node_df.loc[edge_val_to_ix,'color'] = '#bc5090'
+                node_df.loc[edge_val_to_ix,'font'] = [dict(size=50)] * sum(edge_val_to_ix)
+                node_df.loc[edge_val_to_ix,'size'] = 60
+                edge_val_from_ix = node_df.title == edge_val['from']
+                node_df.loc[edge_val_from_ix,'color'] = '#ffa600'
+                node_df.loc[edge_val_from_ix,'font'] = [dict(size=50)] * sum(edge_val_from_ix)
+                #node_df.loc[edge_val_from_ix,'size'] = 50
+                #edge_df.loc[edge_df['id'] == edge_val['id'],'font'] = dict(size=50)
     elif search_type == 'SubjectObject':
+        iterated_title = []
         for node_val in current_data['nodes']:
+            if node_val['title'].lower() in iterated_title:
+                continue
+            iterated_title.append(node_val['title'].lower())
             if search_string in node_val['title'].lower():
-                node_df.loc[node_df.title == node_val['title'],'color'] = '#bc5090'
-                node_df.loc[node_df.title == node_val['title'],'shape'] = 'diamond'
-                node_df.loc[node_df.title == node_val['title'],'size'] = 50
+                same_title_ix = node_df.title == node_val['title']
+                node_df.loc[same_title_ix,'color'] = '#bc5090'
+                node_df.loc[same_title_ix,'font'] = [dict(size=50)] * sum(same_title_ix)
+                node_df.loc[same_title_ix,'size'] = 60
                 list_of_to = edge_df[edge_df['from'] == node_val['title']]['to'].tolist()
-                node_df.loc[(node_df['title'].isin(list_of_to)) & (node_df['color'] != '#bc5090'),'color'] = '#ffa600'
-                node_df.loc[(node_df['title'].isin(list_of_to)) & (node_df['color'] != '#bc5090'),'shape'] = 'triangle'
-                node_df.loc[(node_df['title'].isin(list_of_to)) & (node_df['color'] != '#bc5090'),'size'] = 40
+                list_of_from = edge_df[edge_df['to'] == node_val['title']]['from'].tolist()
+                list_of_to = list(set(list_of_to + list_of_from))
+                edge_node_ix = (edge_df['from'] == node_val['title']) | (edge_df['to'] == node_val['title'])
+                #edge_df.loc[edge_node_ix,'font'] = [dict(size=50)] * sum(edge_node_ix)
+                node_adjacant_ix = (node_df['title'].isin(list_of_to)) & (node_df['color'] != '#bc5090')
+                node_df.loc[node_adjacant_ix,'color'] = '#ffa600'
+                node_df.loc[node_adjacant_ix,'font'] = [dict(size=50)] * sum(node_adjacant_ix)
+                #node_df.loc[node_adjacant_ix,'size'] = 50
     current_data['nodes'] = node_df.to_dict(orient='records')
+    current_data['edges'] = edge_df.to_dict(orient='records')
     return current_data
 
+def getValue(val):
+    ix = val.rfind("/")
+    if ix != -1:
+        val = val[ix+1:]
+        ix = val.rfind("#")
+        if ix != -1:
+            val = val[ix+1:]
+    return val
+
 def set_current_data():
-    node_df = pd.DataFrame(columns=['id','title','label','color','shape','size'])
+    node_df = pd.DataFrame(columns=['id','title','label','color','size'])
     edge_df = pd.DataFrame(columns=['from','to','title','label','id'])
     c=itertools.count()
     for triple in rdf_graph.triples((None,None,None)):
         subjVal = str(triple[0].toPython())
+        labelsubj = getValue(str(subjVal))
         predVal = str(triple[1].toPython())
+        labelpred = getValue(str(predVal))
         objVal = str(triple[2].toPython())
+        labelobj = getValue(str(objVal))
+        is_label_node = "rdf-schema#label" in predVal
         if subjVal not in node_df.id.tolist():
-            new_node = {"id":subjVal,'title':subjVal,'label':subjVal,"color":'#003f5c',"shape":'dot','size':20}
+            new_node = {"id":subjVal,'title':subjVal,'label':labelobj if is_label_node else labelsubj,"color":'#003f5c','size':30}
             node_df = node_df.append(new_node,ignore_index =True)
-        if objVal not in node_df.id.tolist():
-            new_node = {"id":objVal, 'title':objVal,'label':objVal,"color":'#003f5c',"shape":'dot','size':20}
+        elif is_label_node:
+            node_df.loc[node_df.id == subjVal,'label'] = labelobj
+        if objVal not in node_df.id.tolist() and not is_label_node:
+            new_node = {"id":objVal, 'title':objVal,'label':labelobj,"color":'#003f5c','size':30}
             node_df = node_df.append(new_node,ignore_index = True)
-        new_edge = {
-            "from":subjVal,
-            "to":objVal,
-            'title':predVal,
-            'label':predVal,
-            "id":predVal + "#"+str(next(c))}
-        edge_df = edge_df.append(new_edge,ignore_index=True)
+        if not is_label_node:
+            new_edge = {"from":subjVal,"to":objVal,'title':predVal,'label':labelpred,"id":predVal + "#"+str(next(c))}
+            edge_df = edge_df.append(new_edge,ignore_index=True)
     current_data['nodes'] = node_df.to_dict(orient='records')
     current_data['edges'] = edge_df.to_dict(orient='records')
 
@@ -93,7 +123,7 @@ def reset_graph():
 
 
 #creating app
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css',
+external_stylesheets = [dbc.themes.BOOTSTRAP,'https://codepen.io/chriddyp/pen/bWLwgP.css',
                         'https://unpkg.com/vis-network@9.0.4/dist/dist/vis-network.min.css']
 external_scripts = ['https://unpkg.com/vis-network@9.0.4/dist/vis-network.min.js']
 app = dash.Dash(__name__,title="RDF SPARQL Visualization", external_stylesheets=external_stylesheets, external_scripts=external_scripts)
@@ -115,17 +145,17 @@ file_format_dropdown= dcc.Dropdown(id='file-format',
     )
 #upload-data
 load_button_label= html.Label("Upload Data")
-load_button= dcc.Upload(html.Button('Upload File'),id='upload-data', multiple=False)
+load_button= dcc.Upload(dbc.Button('Upload File', color='primary',size='sm'),id='upload-data', multiple=False)
 #clear-graph
-clear_graph_button = html.Button('Clear Graph',id='clear-graph', n_clicks=0)
+clear_graph_button = dbc.Button('Clear Graph',color='danger',size='sm',id='clear-graph', n_clicks=0)
 
 #sparql-query
 sparql_query_label = html.Label('SPARQL Query')
-sparql_query_textarea = dcc.Textarea(id='sparql-query', style={'height': 200})
+sparql_query_textarea = dcc.Textarea(id='sparql-query', style={'height': '200px','width':'100%'})
 
 
 #generate-sparql-graph
-generate_graph_button = html.Button('Generate Graph',id='generate-sparql-graph', n_clicks=0)
+generate_graph_button = dbc.Button('Generate Graph',color='success',size='sm',id='generate-sparql-graph', n_clicks=0)
 
 #search-type
 search_label=html.Label("Search Type")
@@ -139,53 +169,64 @@ search_dropdown= dcc.Dropdown(id='search-type',
     )
 #search-query search-graph
 search_query_input = dcc.Input(id='search-query',placeholder='Enter search string',type='text')
-search_graph_button = html.Button('Search',id='search-graph') 
+search_graph_button = dbc.Button('Search',id='search-graph',color='primary',size='sm') 
 #toggle-edge-label
-toggle_edge_text = daq.ToggleSwitch(id='toggle-edge-label', label='Show Edge Text',labelPosition='left', value = False)
+toggle_edge_text = dbc.Button("Edge Label",id='toggle-edge-label',active=False,color='primary',size='sm')
 #toggle-node-label
-toggle_node_text = daq.ToggleSwitch(id='toggle-node-label', label='Show Node Text',labelPosition='left', value = False)  
+toggle_node_text = dbc.Button("Node Label",id='toggle-node-label',active=False,color='primary',size='sm')  
 vis_opt_store = dcc.Store(id='graph-opt')
 #graph
-visualization_label = html.H3(children = 'Knowledge Graph', style = {'textAlign':'center','color': '#7FDBFF'})
+visualization_label = html.H6(children = 'Knowledge Graph',className='row',style = {'text-align':'center','color': '#7FDBFF'})
 vis_data_store = dcc.Store(id= 'graph-data')
-visualization = html.Div(id='graph-container')
-
+visualization = html.Div(id='graph-container',className='row',style={'height':'650px','width':'100%'})
+#reset_nodes
+reset_node_btn = dbc.Button("Reset Fixed Nodes",id="reset_nodes",n_clicks=0,color='danger',size='sm')
 #App Layout
-app.layout = html.Div(
-    children = [ 
-        vis_data_store,
-        vis_opt_store,
-        html.H1(children = 'RDF SPARQL Visualizer', style = {'textAlign': 'center','color': '#7FDBFF'}),
-        html.Br(),
-        html.Div(
-            className='row',
-            children = [
-                html.Div(
-                    children = [
-                        html.Div(children=rdf_file_label),
-                        html.Br(),
-                        html.Div(children= [file_format_label, file_format_dropdown]),
-                        html.Div(children = [ load_button_label, load_button ]),
-                        html.Br(),
-                        html.Div(children = [ sparql_query_label, sparql_query_textarea]),
-                        html.Br(),
-                        html.Div(children = [clear_graph_button, generate_graph_button]),
-                        html.Br(),
-                        html.Div(children = [search_label, search_dropdown,search_query_input, search_graph_button]),
-                        html.Br(),
-                        html.Div(children=[toggle_node_text,toggle_edge_text]),
-                        html.Br(),
-                        html.Label(id='graph-dummy-output',children=""),
-                        html.Label(id='graph-dummy-opt',children="")
-                    ],
-                    className='three columns'),
-                html.Div(
-                    children = [
-                        html.Div(children = [visualization_label, visualization])
-                    ],
-                    className='nine columns')
+app.layout = dbc.Spinner(
+    children = html.Div(
+        children = [
+            vis_data_store,
+            vis_opt_store,
+            html.H5(children = 'RDF SPARQL Visualizer', style = {'textAlign': 'center','color': '#7FDBFF'}),
+            html.Br(),
+            html.Div(
+                className='row',
+                children = [
+                    html.Div(className='one columns'),
+                    html.Div(
+                        children = [
+                            html.Div(children=rdf_file_label),
+                            html.Br(),
+                            html.Div(children= [file_format_label, file_format_dropdown]),
+                            html.Div(children = [ load_button_label, load_button ]),
+                            html.Br(),
+                            html.Div(children = [ sparql_query_label, sparql_query_textarea]),
+                            html.Br(),
+                            html.Div(children = [clear_graph_button, generate_graph_button]),
+                            html.Br(),
+                            html.Div(children = [search_label, search_dropdown,search_query_input, search_graph_button]),
+                            html.Br(),
+                            html.Label(id='graph-dummy-output',children=""),
+                            html.Label(id='graph-dummy-opt',children=""),
+                            html.Label(id='dummy-reset',children="")
+                        ],
+                        className='two columns'
+                    ),
+                    html.Div(
+                        children = [
+                            visualization_label,
+                            visualization,
+                            html.Div(children = [toggle_node_text,toggle_edge_text,reset_node_btn], className='row')
+                        ],
+                        className='eight columns'),
+                    html.Div(className='one columns')
             ])
-    ])
+        ]),
+        debounce = 1,
+        size='lg',
+        fullscreen=True,
+        color='primary'
+    )
 
     
 
@@ -244,15 +285,26 @@ def generate_graph(
 
 @app.callback(
     Output('graph-opt','data'),
-    Input('toggle-node-label','value'),
-    Input('toggle-edge-label','value'),
-    State('graph-opt','data')
+    Output('toggle-node-label','active'),
+    Output('toggle-edge-label','active'),
+    Input('toggle-node-label','n_clicks'),
+    Input('toggle-edge-label','n_clicks'),
+    State('graph-opt','data'),
+    State('toggle-node-label','active'),
+    State('toggle-edge-label','active'),
 )
-def customize_graph(node_bool,edge_bool,graph_opt):
+def customize_graph(node_n_clicks,edge_n_clicks,graph_opt,node_active,edge_active):
+    ctx=dash.callback_context
+    if not ctx.triggered:
+        raise PreventUpdate
+    if ctx.triggered[0]['prop_id'] == 'toggle-node-label.n_clicks':
+        node_active = not node_active
+    elif ctx.triggered[0]['prop_id'] == 'toggle-edge-label.n_clicks':
+        edge_active = not edge_active
     return {
-        'nodes':0 if not node_bool else 30,
-        'edges':0 if not edge_bool else 30
-        }
+        'nodes':0 if not node_active else 50,
+        'edges':0 if not edge_active else 50
+        },node_active,edge_active
 
 
 app.clientside_callback(
@@ -271,6 +323,15 @@ app.clientside_callback(
     ),
     Output('graph-dummy-opt','children'),
     Input('graph-opt','data')
+)
+
+app.clientside_callback(
+    ClientsideFunction(
+        namespace='clientside',
+        function_name='reset_fixed_nodes'
+    ),
+    Output('dummy-reset','children'),
+    Input('reset_nodes','n_clicks')
 )
 
 

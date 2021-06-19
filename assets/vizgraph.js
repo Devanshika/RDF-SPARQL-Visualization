@@ -9,6 +9,10 @@ window.dash_clientside = Object.assign({}, window.dash_clientside, {
         update_options: function(opt) {
             update_vis_options(opt);
             return "";
+        },
+        reset_fixed_nodes: function(n_clicks) {
+            fixed_node_reset();
+            return "";
         }
     }
 });
@@ -17,12 +21,13 @@ container = null
 data_values = null
 options = {
     clickToUse : true,
-    height : '600px',
-    width : '90%',
+    height : '650px',
+    width : '100%',
     nodes : {
         font : {
             size : 0
-        }
+        },
+        shape :'dot'
     },
     edges : {
         font : {
@@ -52,14 +57,28 @@ options = {
     }
 }
 fixedVals = {}
-
+positions = {}
 networkObj = null;
 
 function add_node_to_simulation(params) {
     for (var i = 0; i < params.nodes.length; i++) {
-        var nodeId = params.nodes[i];
-        global.data_values.nodes.update({id: nodeId, fixed: {x: false, y: false}});
-        global.fixedVals[nodeId] = {x:false,y:false};
+        let nodeId = params.nodes[i];
+        reset_node(nodeId);
+    }
+}
+
+function reset_node(nodeId) {
+    global.data_values.nodes.update({id: nodeId, fixed: {x: false, y: false}});
+    global.fixedVals[nodeId] = {x:false,y:false};
+    global.positions[nodeId] = {x:0,y:0}
+}
+
+function fixed_node_reset() {
+    keylist = Object.keys(global.fixedVals);
+    for(i = 0; i < keylist.length; i ++) {
+        if(global.fixedVals[keylist[i]].x) {
+            reset_node(keylist[i]);
+        }
     }
 }
 
@@ -74,16 +93,23 @@ function update_vis_options(opt) {
 
 function update_vis_graph(dataobj) {
     for(i=0;i<dataobj['nodes'].length;i++) {
-        if (dataobj['nodes'][i]['id'] in fixedVals) {
-            dataobj['nodes'][i]['fixed'] = fixedVals[dataobj['nodes'][i]['id']];
+        if (dataobj['nodes'][i]['id'] in global.fixedVals) {
+            dataobj['nodes'][i]['fixed'] = global.fixedVals[dataobj['nodes'][i]['id']];
+            dataobj['nodes'][i]['x'] = global.positions[dataobj['nodes'][i]['id']]['x'];
+            dataobj['nodes'][i]['y'] = global.positions[dataobj['nodes'][i]['id']]['y'];
         }
         else {
-            dataobj['nodes'][i]['fixed'] = fixedVals[dataobj['nodes'][i]['id']] = {x : false , y : false};
+            dataobj['nodes'][i]['fixed'] = global.fixedVals[dataobj['nodes'][i]['id']] = {x : false , y : false};
+            global.positions[dataobj['nodes'][i]['id']] = {x:0,y:0};
         }
     }
     global.fixedVals = {}
+    global.positions = {}
     for(i=0;i<dataobj['nodes'].length; i++) {
-        fixedVals[dataobj['nodes'][i]['id']] = dataobj['nodes'][i]['fixed'];
+        global.fixedVals[dataobj['nodes'][i]['id']] = dataobj['nodes'][i]['fixed'];
+        global.positions[dataobj['nodes'][i]['id']] = {x:0,y:0}
+        global.positions[dataobj['nodes'][i]['id']]['x'] = dataobj['nodes'][i]['x'];
+        global.positions[dataobj['nodes'][i]['id']]['y'] = dataobj['nodes'][i]['y'];
     }
     if(global.container == null) {
         global.container = document.getElementById('graph-container');
@@ -103,6 +129,7 @@ function update_vis_graph(dataobj) {
                 var nodeId = params.nodes[i];
                 global.data_values.nodes.update({id: nodeId, fixed: {x: true, y: true}});
                 global.fixedVals[nodeId] = {x:true,y:true};
+                global.positions[nodeId] = {x:params.pointer.canvas.x,y:params.pointer.canvas.y}
             }
         });
         global.networkObj.on('dragStart', add_node_to_simulation);
