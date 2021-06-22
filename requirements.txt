@@ -2,3 +2,4 @@ rdflib
 pandas
 dash
 dash_daq
+dash_bootstrap_components
