@@ -1,0 +1,4 @@
+rdflib
+pandas
+dash
+dash_daq
