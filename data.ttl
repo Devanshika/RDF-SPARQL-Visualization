@@ -1,0 +1,3475 @@
+@prefix sdmx_dimension:  <http://purl.org/linked-data/sdmx/year:2009/dimension#> .
+@prefix year: <http://example.com/year>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix doid: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix geo: <https://www.geonames.org/> .
+@prefix : <http://www.semanticweb.org/rmidha/ontologies/statistical#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+	 :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+	:numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "125"^^xsd:int ;
+    :rateper100kpopulation "13.4"^^xsd:decimal  ;
+	rdfs:label "2005"@en.
+
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "18"^^xsd:int ;
+    :rateper100kpopulation "1.9"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+	
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "104"^^xsd:int ;
+    :rateper100kpopulation "11.1"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+
+year:2005  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "21"^^xsd:int ;
+    :rateper100kpopulation "2.2"^^xsd:decimal ;
+	rdfs:label "2005"@en .
+	
+year:2005  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+	
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+
+year:2005  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "25"^^xsd:int ;
+    :rateper100kpopulation "2.7"^^xsd:decimal;
+	rdfs:label "2005"@en.
+	
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "19"^^xsd:int ;
+    :rateper100kpopulation "2.0"^^xsd:decimal;
+	rdfs:label "2005"@en.
+
+year:2005  sdmx_dimension:refArea geo:6091530 ;
+		:hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "10"^^xsd:int ;
+    :rateper100kpopulation "1.1"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+   :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal;
+	rdfs:label "2005"@en.
+	
+year:2005 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+	
+year:2005 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "104"^^xsd:int ;
+    :rateper100kpopulation "11.1"^^xsd:decimal;
+	rdfs:label "2005"@en.	
+	
+year:2005 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2005"@en.
+	
+year:2006 sdmx_dimension:refArea geo:6091530;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "13"^^xsd:int ;
+    :rateper100kpopulation "1.4"^^xsd:decimal ;
+	rdfs:label "2006"@en.
+	
+year:2006 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2006"@en .
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "132"^^xsd:int ;
+    :rateper100kpopulation "14.1"^^xsd:decimal  ;
+	rdfs:label "2006"@en .
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "1762"^^xsd:int ;
+    :rateper100kpopulation "188.4"^^xsd:decimal ;
+	rdfs:label "2006"@en .
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "9"^^xsd:int ;
+    :rateper100kpopulation "1.0"^^xsd:decimal ;
+	rdfs:label "2006"@en .
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2006"@en .
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "106"^^xsd:int ;
+    :rateper100kpopulation "11.3"^^xsd:decimal  ;
+	rdfs:label "2006"@en .
+
+year:2006 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "99"^^xsd:int ;
+    :rateper100kpopulation "10.6"^^xsd:decimal  ;
+	rdfs:label "2006"@en.
+	
+year:2006 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "99"^^xsd:int ;
+    :rateper100kpopulation "10.6"^^xsd:decimal;
+	rdfs:label "2006"@en     .
+	
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal  ;
+	rdfs:label "2006"@en.
+	
+year:2006   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "10"^^xsd:int ;
+    :rateper100kpopulation "1.1"^^xsd:decimal  ;
+	rdfs:label "2006"@en.
+
+year:2006  sdmx_dimension:refArea geo:6091530;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "8"^^xsd:int ;
+    :rateper100kpopulation "0.9"^^xsd:decimal ;
+	rdfs:label "2006"@en.
+
+year:2006   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2006"@en.
+
+year:2006 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal  ;
+	rdfs:label "2006"@en .	
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "108"^^xsd:int ;
+    :rateper100kpopulation "11.6"^^xsd:decimal  ;
+	rdfs:label "2006"@en.
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal  ;
+	rdfs:label "2006"@en.
+	
+year:2006 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "48"^^xsd:int ;
+    :rateper100kpopulation "5.1"^^xsd:decimal  ;
+	rdfs:label "2006"@en.
+
+year:2006 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal  ;
+	rdfs:label "2006"@en .
+
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2006"@en .
+	
+year:2006   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2006"@en.
+	
+year:2006 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "18"^^xsd:int ;
+    :rateper100kpopulation "1.9"^^xsd:decimal ;
+	rdfs:label "2006"@en.
+	
+year:2006  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "18"^^xsd:int ;
+    :rateper100kpopulation "1.9"^^xsd:decimal ;
+	rdfs:label "2006"@en .
+	
+year:2006  sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "23"^^xsd:int ;
+    :rateper100kpopulation "2.5"^^xsd:float  ;
+	rdfs:label "2006"@en.
+
+year:2007     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal  ;
+	rdfs:label "2007"@en. 	
+	
+year:2007  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "13"^^xsd:int ;
+    :rateper100kpopulation "1.4"^^xsd:decimal ;
+	rdfs:label "2007"@en.	
+
+year:2007     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "1788"^^xsd:int ;
+    :rateper100kpopulation "191.4"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+	
+year:2007 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "133"^^xsd:int ;
+    :rateper100kpopulation "14.2"^^xsd:decimal;
+	rdfs:label "2007"@en .
+
+year:2007 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "74"^^xsd:int ;
+    :rateper100kpopulation "7.9"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "72"^^xsd:int ;
+    :rateper100kpopulation "7.7"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "20"^^xsd:int ;
+    :rateper100kpopulation "2.1"^^xsd:decimal;
+	rdfs:label "2007"@en .
+	
+year:2007    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+	
+year:2007 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2007"@en.	
+	
+year:2007  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2007"@en.	
+
+year:2007 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "595"^^xsd:int ;
+    :rateper100kpopulation "63.7"^^xsd:decimal ;
+	rdfs:label "2007"@en .
+
+year:2007    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "33"^^xsd:int ;
+    :rateper100kpopulation "3.5"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2007"@en.	
+	
+year:2007  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "121"^^xsd:int ;
+    :rateper100kpopulation "13.0"^^xsd:decimal ;
+	rdfs:label "2007"@en.	
+
+year:2007 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "72"^^xsd:int ;
+    :rateper100kpopulation "7.7"^^xsd:decimal;
+	rdfs:label "2007"@en     .	
+
+year:2007  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal;
+	rdfs:label "2007"@en .
+
+year:2007 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "9"^^xsd:int ;
+    :rateper100kpopulation "1"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+	
+year:2007  sdmx_dimension:refArea geo:6091530;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "8"^^xsd:int ;
+    :rateper100kpopulation "0.9"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2007   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal ;
+	rdfs:label "2007"@en.
+
+year:2008  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal ;
+	rdfs:label "2008"@en.
+
+year:2008 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "159"^^xsd:int ;
+    :rateper100kpopulation "17.0"^^xsd:decimal ;
+	rdfs:label "2008"@en .
+
+year:2008 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2033"^^xsd:int ;
+    :rateper100kpopulation "217.9"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "11"^^xsd:int ;
+    :rateper100kpopulation "1.2"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "107"^^xsd:int ;
+    :rateper100kpopulation "11.5"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "143"^^xsd:int ;
+    :rateper100kpopulation "15.3"^^xsd:decimal  ;
+	rdfs:label "2008"@en.	
+
+year:2008  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "21"^^xsd:int ;
+    :rateper100kpopulation "2.3"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2008"@en .	
+
+year:2008 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2008"@en.	
+
+year:2008 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "143"^^xsd:int ;
+    :rateper100kpopulation "15.3"^^xsd:decimal;
+	rdfs:label "2008"@en     .	
+
+year:2008  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "14"^^xsd:int ;
+    :rateper100kpopulation "1.5"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "137"^^xsd:int ;
+    :rateper100kpopulation "14.7"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "7"^^xsd:int ;
+    :rateper100kpopulation "0.8"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+
+year:2008   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "4"^^xsd:int;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2008"@en .
+
+year:2008  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal  ;
+	rdfs:label "2008"@en.
+	
+year:2009 sdmx_dimension:refArea geo:6091530;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2009"@en .
+
+year:2009  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal;
+	rdfs:label "2009"@en .
+
+year:2009 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "123"^^xsd:int ;
+    :rateper100kpopulation "13.2"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "1982"^^xsd:int ;
+    :rateper100kpopulation "212.5"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "10"^^xsd:int ;
+    :rateper100kpopulation "1.1"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+	
+year:2009 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "76"^^xsd:int ;
+    :rateper100kpopulation "8.1"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "127"^^xsd:int ;
+    :rateper100kpopulation "13.6"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009  sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "13"^^xsd:int ;
+    :rateper100kpopulation "1.4"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal;
+	rdfs:label "2009"@en .
+
+year:2009   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal;
+	rdfs:label "2009"@en .
+
+year:2009     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "18"^^xsd:int ;
+    :rateper100kpopulation "1.9"^^xsd:decimal;
+	rdfs:label "2009"@en .
+
+year:2009 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "94"^^xsd:int ;
+    :rateper100kpopulation "10.1"^^xsd:decimal;
+	rdfs:label "2009"@en .
+
+year:2009   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "11"^^xsd:int ;
+    :rateper100kpopulation "1.2"^^xsd:decimal;
+	rdfs:label "2009"@en .
+
+year:2009  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2009 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "7"^^xsd:int ;
+    :rateper100kpopulation "0.8"^^xsd:decimal;
+	rdfs:label "2009"@en .
+
+year:2009 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "127"^^xsd:int ;
+    :rateper100kpopulation "13.6"^^xsd:decimal;
+	rdfs:label "2009"@en     .
+	
+year:2009  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal ;
+	rdfs:label "2009"@en.
+
+year:2010   sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2010"@en.
+	
+year:2010     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal;
+	rdfs:label "2010"@en .
+
+year:2010    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "151"^^xsd:int ;
+    :rateper100kpopulation "16.2"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+	
+year:2010    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2230"^^xsd:int ;
+    :rateper100kpopulation "239.1"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "21"^^xsd:int ;
+    :rateper100kpopulation "2.3"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2010"@en  .
+
+year:2010  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "68"^^xsd:int ;
+    :rateper100kpopulation "7.3"^^xsd:decimal;
+	rdfs:label "2010"@en  .
+
+year:2010 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "100"^^xsd:int ;
+    :rateper100kpopulation "10.7"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010     sdmx_dimension:refArea geo:5883102 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "205"^^xsd:int ;
+    :rateper100kpopulation "5.49"^^xsd:decimal;
+	rdfs:label "2010"@en  .
+
+year:2010   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "15"^^xsd:int ;
+    :rateper100kpopulation "1.6"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010    sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:17018 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "145"^^xsd:int ;
+    :rateper100kpopulation "15.5"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "11"^^xsd:int ;
+    :rateper100kpopulation "1.2"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "10"^^xsd:int ;
+    :rateper100kpopulation "1.1"^^xsd:decimal ;
+	rdfs:label "2010"@en .
+
+year:2010 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "100"^^xsd:int ;
+    :rateper100kpopulation "10.7"^^xsd:decimal;
+	rdfs:label "2010"@en     .	
+
+year:2010 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal;
+	rdfs:label "2010"@en  .
+	
+year:2010 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2010"@en.
+	
+year:2010 sdmx_dimension:refArea geo:5883102 ;
+	:hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+	:numberofcases "205"^^xsd:int ;
+	:rateper100kpopulation "5.49"^^xsd:decimal ;
+	rdfs:label "2010"@en  .
+
+year:2011 sdmx_dimension:refArea geo:5883102 ;
+	:hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+	:numberofcases "224"^^xsd:int ;
+    :rateper100kpopulation "5.91"^^xsd:decimal ;
+	rdfs:label "2011"@en  .
+	
+year:2011  sdmx_dimension:refArea geo:6091530  ;
+    sdmx_dimension:refPeriod year:2011 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2011"@en  .
+	
+year:2011  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "185"^^xsd:int ;
+    :rateper100kpopulation "19.8"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2478"^^xsd:int ;
+    :rateper100kpopulation "265.7"^^xsd:decimal;
+	rdfs:label "2011"@en .
+
+year:2011 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "12"^^xsd:int ;
+    :rateper100kpopulation "1.3"^^xsd:decimal ;
+	rdfs:label "2011"@en  .
+
+year:2011   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "66"^^xsd:int ;
+    :rateper100kpopulation "7.1"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "102"^^xsd:int ;
+    :rateper100kpopulation "10.9"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "102"^^xsd:int ;
+    :rateper100kpopulation "10.9"^^xsd:decimal;
+	rdfs:label "2011"@en     .
+
+year:2011 sdmx_dimension:refArea geo:5883102 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "224"^^xsd:int ;
+    :rateper100kpopulation "5.91"^^xsd:decimal ;
+	rdfs:label "2011"@en . 
+	
+year:2011 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2011"@en.
+	
+year:2011     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "15"^^xsd:int ;
+    :rateper100kpopulation "1.6"^^xsd:decimal ;
+	rdfs:label "2011"@en . 
+
+year:2011  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal;
+	rdfs:label "2011"@en  .
+	
+year:2011     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+	
+year:2011     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "170"^^xsd:int ;
+    :rateper100kpopulation "18.2"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "13"^^xsd:int ;
+    :rateper100kpopulation "1.4"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+
+year:2011  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "9"^^xsd:int ;
+    :rateper100kpopulation "1"^^xsd:decimal;
+	rdfs:label "2011"@en  .
+
+year:2011 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2011"@en .
+	
+year:2012 sdmx_dimension:refArea geo:5883102 ;
+	:hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+	:numberofcases "240"^^xsd:int ;
+    :rateper100kpopulation "6.19"^^xsd:decimal ;
+	rdfs:label "2012"@en  .	
+
+year:2012     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal;
+	rdfs:label "2012"@en   .
+	
+year:2012   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal;
+	rdfs:label "2012"@en   .
+
+year:2012     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "188"^^xsd:int ;
+    :rateper100kpopulation "19.8"^^xsd:decimal;
+	rdfs:label "2012"@en   .
+
+year:2012 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2614"^^xsd:int ;
+    :rateper100kpopulation "275.5"^^xsd:decimal;
+	rdfs:label "2012"@en   .
+
+year:2012  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "18"^^xsd:int ;
+    :rateper100kpopulation "1.9"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "96"^^xsd:int ;
+    :rateper100kpopulation "10.1"^^xsd:decimal  ;
+	rdfs:label "2012"@en .
+	
+year:2012  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "119"^^xsd:int ;
+    :rateper100kpopulation "12.5"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012     sdmx_dimension:refArea geo:5883102;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "240"^^xsd:int ;
+    :rateper100kpopulation "6.19"^^xsd:decimal ;
+	rdfs:label "2012"@en   .
+
+year:2012  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "17"^^xsd:int ;
+    :rateper100kpopulation "1.8"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2012"@en.
+
+year:2012 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "119"^^xsd:int ;
+    :rateper100kpopulation "12.5"^^xsd:decimal;
+	rdfs:label "2012"@en     .
+
+year:2012  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+	
+year:2012   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal;
+	rdfs:label "2012"@en   .
+
+year:2012    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "22"^^xsd:int ;
+    :rateper100kpopulation "2.3"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "150"^^xsd:int ;
+    :rateper100kpopulation "15.8"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "11"^^xsd:int ;
+    :rateper100kpopulation "1.2"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2012"@en   .
+
+year:2012 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+
+year:2012   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "8"^^xsd:int ;
+    :rateper100kpopulation "0.8"^^xsd:decimal ;
+	rdfs:label "2012"@en  . 
+
+year:2012   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "0"^^xsd:int;
+    :rateper100kpopulation "0"^^xsd:decimal ;
+	rdfs:label "2012"@en  .
+	
+year:2013 sdmx_dimension:refArea geo:5883102 ;
+	:hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+	:numberofcases "261"^^xsd:int ;
+    :rateper100kpopulation "6.56"^^xsd:decimal ;
+	rdfs:label "2013"@en  .	
+	
+year:2013      sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+	
+year:2013 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "172"^^xsd:int ;
+    :rateper100kpopulation "18.3"^^xsd:decimal;
+	rdfs:label "2013"@en   .
+
+year:2013  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2466"^^xsd:int ;
+    :rateper100kpopulation "262.1"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "22"^^xsd:int ;
+    :rateper100kpopulation "2.3"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+	
+year:2013 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2013"@en.
+	
+year:2013   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "96"^^xsd:int ;
+    :rateper100kpopulation "10.2"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+
+year:2013  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "97"^^xsd:int ;
+    :rateper100kpopulation "10.3"^^xsd:decimal;
+	rdfs:label "2013"@en  .
+
+year:2013 sdmx_dimension:refArea geo:5883102;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "261"^^xsd:int ;
+    :rateper100kpopulation "6.56"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+	
+year:2013  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "16"^^xsd:int ;
+    :rateper100kpopulation "1.7"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+	
+year:2013   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "97"^^xsd:int ;
+    :rateper100kpopulation "10.3"^^xsd:decimal;
+	rdfs:label "2013"@en     .
+
+year:2013    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "169"^^xsd:int ;
+    :rateper100kpopulation "18.0"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal;
+	rdfs:label "2013"@en   .
+
+year:2013 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal;
+	rdfs:label "2013"@en   .
+
+year:2013   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "8"^^xsd:int ;
+    :rateper100kpopulation "0.9"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2013    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2013"@en  .
+
+year:2014 sdmx_dimension:refArea geo:5883102 ;
+	:hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+	:numberofcases "283"^^xsd:int ;
+    :rateper100kpopulation "6.93"^^xsd:decimal ;
+	rdfs:label "2014"@en  .		
+
+year:2014   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal;
+	rdfs:label "2014"@en   .
+	
+year:2014 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2014"@en.
+
+year:2014    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal ;
+	rdfs:label "2014"@en  .
+
+year:2014   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "180"^^xsd:int ;
+    :rateper100kpopulation "19.2"^^xsd:decimal ;
+	rdfs:label "2014"@en  .
+
+year:2014  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2628"^^xsd:int ;
+    :rateper100kpopulation "279.9"^^xsd:decimal;
+	rdfs:label "2014"@en   .
+
+year:2014 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "32"^^xsd:int ;
+    :rateper100kpopulation "3.4"^^xsd:decimal;
+	rdfs:label "2014"@en    .
+
+year:2014 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+     rdfs:label "2014"@en. 
+
+ year:2014 sdmx_dimension:refArea geo:6091530 ;
+    sdmx_dimension:refPeriod <https://dbpedia.org/page/year:2014> ;
+    :hasdisease doid:17018 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+	
+year:2014   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "90"^^xsd:int ;
+    :rateper100kpopulation "9.6"^^xsd:decimal;
+	rdfs:label "2014"@en    .
+
+year:2014 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "113"^^xsd:int ;
+    :rateper100kpopulation "12.0"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014     sdmx_dimension:refArea geo:5883102 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "283"^^xsd:int ;
+    :rateper100kpopulation "6.93"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014   sdmx_dimension:refArea geo:6091530;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "10"^^xsd:int ;
+	:rateper100kpopulation "1.1"^^xsd:decimal;
+	rdfs:label "2014"@en    .
+
+year:2014  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+
+year:2014     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "11"^^xsd:int ;
+    :rateper100kpopulation "1.2"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2014"@en   .
+
+year:2014     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "204"^^xsd:int ;
+    :rateper100kpopulation "21.7"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "9"^^xsd:int ;
+    :rateper100kpopulation "1.0"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0.0"^^xsd:decimal  ;
+	rdfs:label "2014"@en   .
+
+year:2014     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:2043,
+        doid:4,
+        doid:934 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2014 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:399,
+        doid:4;
+    :numberofcases "7"^^xsd:int ;
+    :rateper100kpopulation "0.7"^^xsd:decimal;
+	rdfs:label "2014"@en    .
+
+year:2014 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "113"^^xsd:int ;
+    :rateper100kpopulation "12.0"^^xsd:decimal;
+	rdfs:label "2014"@en     .	
+
+year:2014     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2014"@en   .
+
+year:2015     sdmx_dimension:refArea geo:5883102 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "231"^^xsd:int ;
+    :rateper100kpopulation "5.51"^^xsd:decimal ;
+	rdfs:label "2015"@en   .	
+
+year:2015 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal ;
+	rdfs:label "2015"@en    .
+
+year:2015 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+year:2015  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "155"^^xsd:int ;
+    :rateper100kpopulation "16.4"^^xsd:decimal ;
+	rdfs:label "2015"@en    .
+
+year:2015    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2821"^^xsd:int ;
+    :rateper100kpopulation "299.2"^^xsd:decimal ;
+	rdfs:label "2015"@en. 
+	
+year:2015 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2015"@en.	
+
+year:2015 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "17"^^xsd:int ;
+    :rateper100kpopulation "1.8"^^xsd:decimal ;
+	rdfs:label "2015"@en    .
+
+year:2015   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "3"^^xsd:int ;
+    :rateper100kpopulation "0.3"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+year:2015   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "83"^^xsd:int ;
+    :rateper100kpopulation "8.8"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+year:2015   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease "Gonorrhea"@en ;
+    :numberofcases "129"^^xsd:int ;
+    :rateper100kpopulation "13.7"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+
+year:2015 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "17"^^xsd:int ;
+    :rateper100kpopulation "1.8"^^xsd:decimal ;
+	rdfs:label "2015"@en    .
+
+year:2015    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal;
+	rdfs:label "2015"@en    .
+
+year:2015     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "7"^^xsd:int ;
+    :rateper100kpopulation "0.7"^^xsd:decimal .
+
+year:2015   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "4"^^xsd:int ;
+    :rateper100kpopulation "0.4"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+year:2015     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal ;
+	rdfs:label "2015"@en    .
+
+year:2015   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "110"^^xsd:int ;
+    :rateper100kpopulation "11.7"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+year:2015    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal ;
+	rdfs:label "2015"@en   .
+	
+year:2015   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "168"^^xsd:int ;
+    :rateper100kpopulation "17.8"^^xsd:decimal ;
+	rdfs:label "2015"@en    .
+
+year:2015    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "5"^^xsd:int ;
+    :rateper100kpopulation "0.5"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+year:2015 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "129"^^xsd:int ;
+    :rateper100kpopulation "13.7"^^xsd:decimal;
+	rdfs:label "2015"@en     .	
+
+year:2015    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+	
+year:2015     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal  ;
+	rdfs:label "2015"@en   .
+
+year:2016 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:635,
+        doid:934 ;
+    :numberofcases "1"^^xsd:int ;
+	:rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2016     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal;
+	rdfs:label "2016"@en     .
+
+year:2016     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:13622 ;
+    :numberofcases "170"^^xsd:int ;
+    :rateper100kpopulation "17.9"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2016     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2931"^^xsd:int ;
+    :rateper100kpopulation "308.7"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2016    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1733 ;
+    :numberofcases "27"^^xsd:int ;
+    :rateper100kpopulation "2.8"^^xsd:decimal;
+	rdfs:label "2016"@en     .
+
+year:2016    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2016    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "100"^^xsd:int ;
+    :rateper100kpopulation "10.5"^^xsd:decimal;
+	rdfs:label "2016"@en     .
+
+year:2016 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:7551 ;
+    :numberofcases "202"^^xsd:int ;
+    :rateper100kpopulation "21.3"^^xsd:decimal;
+	rdfs:label "2016"@en     .
+
+year:2016 sdmx_dimension:refArea geo:5883102 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "285"^^xsd:int ;
+    :rateper100kpopulation "6.79"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2016  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "19"^^xsd:int ;
+    :rateper100kpopulation "2"^^xsd:decimal;
+	rdfs:label "2016"@en     .
+	
+year:2016     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2016   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12365 ;
+    :numberofcases "6"^^xsd:int ;
+    :rateper100kpopulation "0.6"^^xsd:decimal;
+	rdfs:label "2016"@en     .
+        
+year:2016  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal;
+	rdfs:label "2016"@en     .
+
+year:2016    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:1116 ;
+    :numberofcases "63"^^xsd:int ;
+    :rateper100kpopulation "6.6"^^xsd:decimal .
+
+year:2016    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal ;
+	rdfs:label "2016"@en  ;
+	rdfs:label "2016"@en.
+
+year:2016   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "139"^^xsd:int ;
+    :rateper100kpopulation "14.6"^^xsd:decimal;
+	rdfs:label "2016"@en .
+
+year:2016   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12385 ;
+    :numberofcases "10"^^xsd:int ;
+    :rateper100kpopulation "1.1"^^xsd:decimal;
+	rdfs:label "2016"@en .
+
+year:2016     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2016   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "1"^^xsd:int ;
+    :rateper100kpopulation "0.1"^^xsd:decimal ;
+	rdfs:label "2016"@en    .
+
+year:2017  sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2017"@en    .
+
+year:2017    sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11976 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal  ;
+	rdfs:label "2017"@en    .
+
+year:2017     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11263 ;
+    :numberofcases "2988"^^xsd:int ;
+    :rateper100kpopulation "313.3"^^xsd:decimal ;
+	rdfs:label "2017"@en     .
+
+year:2017 sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:12750 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2017"@en     .
+
+year:2017 sdmx_dimension:refArea geo:6091530  ;
+    :hasdisease doid:12549;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal ;
+	rdfs:label "2017"@en.
+	
+year:2017   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "93"^^xsd:int ;
+    :rateper100kpopulation "9.7"^^xsd:decimal  ;
+	rdfs:label "2017"@en.
+
+year:2017     sdmx_dimension:refArea geo:5883102 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "286"^^xsd:int ;
+	:rateper100kpopulation "6.74"^^xsd:decimal ;
+	rdfs:label "2017"@en  .
+        
+year:2017  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:4,
+        doid:526,
+        doid:934 ;
+    :numberofcases "15"^^xsd:int ;
+    :rateper100kpopulation "1.6"^^xsd:decimal ;
+	rdfs:label "2017"@en    . 
+
+year:2017  sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:17018 ;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal  ;
+	rdfs:label "2017"@en.
+
+year:2017   sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10458 ;
+    :numberofcases "9"^^xsd:int ;
+    :rateper100kpopulation "0.9"^^xsd:decimal  ;
+	rdfs:label "2017"@en    .
+
+year:2017     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:10264 ;
+    :numberofcases "21"^^xsd:int ;
+    :rateper100kpopulation "2.2"^^xsd:decimal  ;
+	rdfs:label "2017"@en    .
+
+year:2017     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:8781 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal  ;
+	rdfs:label "2017"@en.
+
+year:2017     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0060859 ;
+    :numberofcases "171"^^xsd:int ;
+    :rateper100kpopulation "17.9"^^xsd:decimal  ;
+	rdfs:label "2017"@en    .
+
+year:2017     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:11338 ;
+    :numberofcases "0"^^xsd:int ;
+    :rateper100kpopulation "0"^^xsd:decimal  ;
+	rdfs:label "2017"@en.
+
+year:2017     sdmx_dimension:refArea geo:6091530 ;
+    :hasdisease doid:0050117,
+        doid:0050338,
+        doid:104,
+        doid:13258,
+        doid:4;
+    :numberofcases "2"^^xsd:int ;
+    :rateper100kpopulation "0.2"^^xsd:decimal  ;
+	rdfs:label "2017"@en    .
+
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4;
+:numberofcases "42"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4;
+:numberofcases "54"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4;
+:numberofcases "42"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2008; 
+:isa doid:4;
+:numberofcases "41"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4;
+:numberofcases "27"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4;
+:numberofcases "241"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2011 ;
+:isa doid:4;
+:numberofcases "257"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod  year:2012 ;
+:isa doid:4;
+:numberofcases "268"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2013 ;
+:isa doid:4;
+:numberofcases "288"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2014 ;
+:isa doid:4;
+:numberofcases "308"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2015;
+:isa doid:4;
+:numberofcases "251"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2016 ;
+:isa doid:4;
+:numberofcases "306"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+
+doid:0050117 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2017 ;
+:isa doid:4;
+:numberofcases "304"^^xsd:int ;
+rdfs:label "Disease by Infectious Agents"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "205"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "224"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "240"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "261"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "283"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2015;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "231"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "285"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:5883102;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "286"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "26"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006; 
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "36"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007; 
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "25"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008; 
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "27"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009; 
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "15"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "225"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "243"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012 ;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "259"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013  ;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "277"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014  ;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "295"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015 ;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "251"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016 ;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "305"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:526 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017  ;
+:isa doid:4, doid:0050117, doid:934 ;
+:numberofcases: "302"^^xsd:int ;
+rdfs:label "HIV Infectious disease"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "5"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "5"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "5"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "6"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "2"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "5"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "4"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "2"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "2"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "3"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "1"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+doid:635 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:934, doid:526, doid:0050117;
+:numberofcases: "1"^^xsd:int ;
+rdfs:label "AIDS"@en.
+
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117;
+:numberofcases: "5"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117;
+:numberofcases: "13"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2007; 
+:isa doid:4, doid:0050117;
+:numberofcases: "5"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117;
+:numberofcases: "6"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117;
+:numberofcases: "2"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2010 ;
+:isa doid:4, doid:0050117;
+:numberofcases: "5"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2011 ;
+:isa doid:4, doid:0050117;
+:numberofcases: "4"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117;
+:numberofcases: "2"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod  year:2014 ;
+:isa doid:4, doid:0050117;
+:numberofcases: "2"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2015;
+:isa doid:4, doid:0050117;
+:numberofcases: "3"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2016 ;
+:isa doid:4, doid:0050117;
+:numberofcases: "1"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:934 sdmx_dimension:refArea geo:6091530, geo:5883102;
+sdmx_dimension:refPeriod year:2017 ;
+:isa doid:4, doid:0050117;
+:numberofcases: "1"^^xsd:int;
+rdfs:label "Viral infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "6"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "10"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "8"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+	
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "7"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "7"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "13"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "10"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "8"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "9"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "9"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "1"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:0050338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:0050117, doid:104, doid:399;
+:numberofcases "2"^^xsd:int ;
+rdfs:label "Primary Bacterial infectious disease"@en .
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "6"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "10"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "8"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "7"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "7"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "13"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "10"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "8"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "9"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2014;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "9"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "1"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:104 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2017;
+:isa doid:4, doid:0050117;
+:hasdisease doid:0050338, doid:399;
+:numberofcases "2"^^xsd:int;
+rdfs:label "Bacterial infectious disease"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "5"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "10"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "8"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "4"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "7"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "10"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "9"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "8"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "8"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:399 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "7"^^xsd:int;
+rdfs:label "Tuberculosis"@en.
+
+doid:13258 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "3"^^xsd:int;
+rdfs:label "Typhoid Fever"@en .
+
+doid:13258 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "3"^^xsd:int;
+rdfs:label "Typhoid Fever"@en .
+
+doid:13258 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "1"^^xsd:int;
+rdfs:label "Typhoid Fever"@en .
+
+doid:13258 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "1"^^xsd:int;
+rdfs:label "Typhoid Fever"@en .
+
+doid:13258 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "2"^^xsd:int;
+rdfs:label "Typhoid Fever"@en .
+
+doid:13258 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2016;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "1"^^xsd:int;
+rdfs:label "Typhoid Fever"@en .
+
+doid:13258 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases "2"^^xsd:int;
+rdfs:label "Typhoid Fever"@en .
+
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "104"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "99"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "72"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "143"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "127"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "100"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "102"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2012;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "119"^^xsd:int;
+rdfs:label "Gonorrhea"@en. 
+
+doid:7551 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2013;
+:isa doid:4, doid:0050117, doid:104, doid:0050338; 
+:numberofcases "27"^^xsd:int;
+rdfs:label "Gonorrhea"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "10"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "8"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "9"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "7"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "5"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "3"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "4"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "1"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "2"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+doid:2043 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases "4"^^xsd:int ;
+rdfs:label "Hepatitis B"@en.
+
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2010;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "7"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:10458 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "9"^^xsd:int;
+rdfs:label "Legionellosis"@en.
+
+doid:12365 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "37"^^xsd:int;
+rdfs:label "Malaria"@en.
+
+doid:11976 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Botulism"@en.
+
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005  ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "125"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "132"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "133"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "159"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "123"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "151"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "185"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "188"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "172"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014  ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "180"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015  ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "155"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+doid:13622 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016  ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "170"^^xsd:int;
+rdfs:label "Campylobacteriosis"@en.
+
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "1762"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007 ;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "1788"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2033"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009 ;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "1982"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2230"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2478"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2614"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013 ;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2466"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2628"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2015 ;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2821"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2931"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+doid:11263 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017 ;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "2988"^^xsd:int;
+rdfs:label "Chlamydia"@en.
+
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117;
+:numberofcases  "18"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006; 
+:isa doid:4, doid:0050117;
+:numberofcases  "9"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "13"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117;
+:numberofcases  "11"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "10"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2010 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "21"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "12"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2012 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "18"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117;
+:numberofcases  "22"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "32"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2015 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "17"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:1733 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "27"^^xsd:int;
+rdfs:label "Cryptosporidiosis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:12750 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017 ;
+:isa doid:4, doid:0050117;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Cyclosporiasis"@en.
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2013;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015;
+:isa doid:4, doid:0050117;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+doid:17018 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:0050117;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Giardiasis"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "5"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+ doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "18"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "5"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "4"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2011;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "4"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2015;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:12549 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Hepatitis A"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "6"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "595"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "5"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "639"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "2"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2015;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "6"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+doid:10264 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2017;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "21"^^xsd:int;
+rdfs:label "Mumps"@en.
+
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "25"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "48"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "33"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "14"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "18"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2010;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "6"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "3"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "22"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "4"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod  year:2014;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "11"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "110"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:1116 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117, doid:104;
+:numberofcases  "63"^^xsd:int;
+rdfs:label "Pertussis"@en.
+
+doid:8781 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006;
+:isa doid:4, doid:0050117, doid:934;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Rubella"@en.
+
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2006 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "108"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "121"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "137"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "94"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "145"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "170"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "150"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "169"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "204"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "168"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+doid:0060859  sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "139"^^xsd:int;
+rdfs:label "Salmonellosis"@en.
+
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2005;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "19"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2007 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "6"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2008 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "4"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2009 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "11"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2010 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "11"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2011;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "13"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "11"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2013 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2014 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "9"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2015 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "5"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+doid:12385 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2016 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "10"^^xsd:int;
+rdfs:label "Shigellosis"@en.
+
+
+doid:11338 sdmx_dimension:refArea geo:6091530;
+sdmx_dimension:refPeriod year:2012 ;
+:isa doid:4, doid:0050117, doid:104, doid:0050338;
+:numberofcases  "1"^^xsd:int;
+rdfs:label "Tetanus"@en.
+
+geo:6091530 sdmx_dimension:refPeriod year:2005,year:2006, year:2007,year:2008,year:2009, year:2010,year:2011, year:2012,year:2013,year:2014,year:2015,year:2016, year:2017;
+:hasdisease doid:11338, doid:12385, doid:0060859, doid:8781, doid:1116, doid:10264, doid:12549, doid:17018, doid:12750, doid:1733,
+ doid:11263, doid:13622, doid:11976 , doid:12365, doid:10458, doid:2043, doid:13258, doid:399, doid:104, doid:0050338,
+ doid:934,doid:635, doid:526, doid:4, doid:0050117;
+ rdfs:label "Nova Scotia"@en.
+
+geo:5883102 sdmx_dimension:refPeriod year:2010, year:2011, year:2013, year:2014, year:2015, year:2016, year:2017;
+:hasdisease doid:0050117,doid:4,doid:526,doid:934 ;
+rdfs:label "Alberta"@en.

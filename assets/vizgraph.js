@@ -1,4 +1,4 @@
-
+//clientside dashboard functions
 global = this
 window.dash_clientside = Object.assign({}, window.dash_clientside, {
     clientside: {
@@ -16,7 +16,7 @@ window.dash_clientside = Object.assign({}, window.dash_clientside, {
         }
     }
 });
-
+//graph container
 container = null
 data_values = null
 options = {
@@ -81,7 +81,7 @@ function fixed_node_reset() {
         }
     }
 }
-
+//update setings of the graph
 function update_vis_options(opt) {
     if(global.container == null || global.networkObj == null) {
         return;
@@ -91,6 +91,7 @@ function update_vis_options(opt) {
     global.networkObj.setOptions(global.options);
 }
 
+//update the graph with new nodes and edges
 function update_vis_graph(dataobj) {
     for(i=0;i<dataobj['nodes'].length;i++) {
         if (dataobj['nodes'][i]['id'] in global.fixedVals) {

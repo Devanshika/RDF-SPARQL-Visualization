@@ -21,7 +21,7 @@ rdf_file="No file chosen"
 #reference for setup
 current_data = {'nodes':[],'edges':[]}
 
-#functionality
+#search nodes and edges based on search field
 def get_nodes_by_search(search_type,search_string):
     search_string = search_string.lower()
     node_df = pd.DataFrame(current_data['nodes'])
@@ -32,7 +32,7 @@ def get_nodes_by_search(search_type,search_string):
     edge_df['font'] = None
     if search_type == 'Predicate':
         for edge_val in current_data['edges']:
-            if search_string in edge_val['title'].lower():
+            if search_string in edge_val['label'].lower():
                 edge_val_to_ix = node_df.title == edge_val['to']
                 node_df.loc[edge_val_to_ix,'color'] = '#bc5090'
                 node_df.loc[edge_val_to_ix,'font'] = [dict(size=50)] * sum(edge_val_to_ix)
@@ -40,15 +40,14 @@ def get_nodes_by_search(search_type,search_string):
                 edge_val_from_ix = node_df.title == edge_val['from']
                 node_df.loc[edge_val_from_ix,'color'] = '#ffa600'
                 node_df.loc[edge_val_from_ix,'font'] = [dict(size=50)] * sum(edge_val_from_ix)
-                #node_df.loc[edge_val_from_ix,'size'] = 50
-                #edge_df.loc[edge_df['id'] == edge_val['id'],'font'] = dict(size=50)
+               
     elif search_type == 'SubjectObject':
         iterated_title = []
         for node_val in current_data['nodes']:
             if node_val['title'].lower() in iterated_title:
                 continue
             iterated_title.append(node_val['title'].lower())
-            if search_string in node_val['title'].lower():
+            if search_string in node_val['label'].lower():
                 same_title_ix = node_df.title == node_val['title']
                 node_df.loc[same_title_ix,'color'] = '#bc5090'
                 node_df.loc[same_title_ix,'font'] = [dict(size=50)] * sum(same_title_ix)
@@ -57,15 +56,16 @@ def get_nodes_by_search(search_type,search_string):
                 list_of_from = edge_df[edge_df['to'] == node_val['title']]['from'].tolist()
                 list_of_to = list(set(list_of_to + list_of_from))
                 edge_node_ix = (edge_df['from'] == node_val['title']) | (edge_df['to'] == node_val['title'])
-                #edge_df.loc[edge_node_ix,'font'] = [dict(size=50)] * sum(edge_node_ix)
+           
                 node_adjacant_ix = (node_df['title'].isin(list_of_to)) & (node_df['color'] != '#bc5090')
                 node_df.loc[node_adjacant_ix,'color'] = '#ffa600'
                 node_df.loc[node_adjacant_ix,'font'] = [dict(size=50)] * sum(node_adjacant_ix)
-                #node_df.loc[node_adjacant_ix,'size'] = 50
+                
     current_data['nodes'] = node_df.to_dict(orient='records')
     current_data['edges'] = edge_df.to_dict(orient='records')
     return current_data
 
+#gets field value
 def getValue(val):
     ix = val.rfind("/")
     if ix != -1:
@@ -75,6 +75,7 @@ def getValue(val):
             val = val[ix+1:]
     return val
 
+#nodes and edges of the graph data are created
 def set_current_data():
     node_df = pd.DataFrame(columns=['id','title','label','color','size'])
     edge_df = pd.DataFrame(columns=['from','to','title','label','id'])
@@ -101,6 +102,7 @@ def set_current_data():
     current_data['nodes'] = node_df.to_dict(orient='records')
     current_data['edges'] = edge_df.to_dict(orient='records')
 
+#sets data according to query filter or search string
 def get_nodes_and_edges(query_value = None,search_type = None,search_string = None):
     global rdf_graph
     global current_data
@@ -113,6 +115,7 @@ def get_nodes_and_edges(query_value = None,search_type = None,search_string = No
     set_current_data()
     return current_data
 
+#resets graph
 def reset_graph():
     global default_graph
     global rdf_graph
@@ -151,7 +154,7 @@ clear_graph_button = dbc.Button('Clear Graph',color='danger',size='sm',id='clear
 
 #sparql-query
 sparql_query_label = html.Label('SPARQL Query')
-sparql_query_textarea = dcc.Textarea(id='sparql-query', style={'height': '200px','width':'100%'})
+sparql_query_textarea = dcc.Textarea(id='sparql-query', style={'height': '200px','width':'100%'}, value='CONSTRUCT  {?s ?p ?o} WHERE  {?s ?p ?o}')
 
 
 #generate-sparql-graph
@@ -222,7 +225,7 @@ app.layout = dbc.Spinner(
                     html.Div(className='one columns')
             ])
         ]),
-        debounce = 1,
+        debounce = 1, #spinner paramters
         size='lg',
         fullscreen=True,
         color='primary'
